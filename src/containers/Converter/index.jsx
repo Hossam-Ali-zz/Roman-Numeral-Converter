@@ -20,16 +20,16 @@ const Converter = () => {
           <p>Enter Roman Numerals</p>
           <Input
             type="text"
-            placeholder="Roman"
+            placeholder="Roman Numerals ex: MCMXC"
             handleInputChange={handleInputChange}
           />
           {romanNumber.length > 0 && <h1>{deromanize(romanNumber)}</h1>}
         </div>
         <div className="input-result-container">
-          <p>Enter English Number</p>
+          <p>Enter English Numerals</p>
           <Input
             type="number"
-            placeholder="English"
+            placeholder="English Numerals ex: 1990"
             min={1}
             handleInputChange={handleInputChange}
           />
