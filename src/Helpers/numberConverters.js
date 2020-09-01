@@ -30,7 +30,7 @@ export const fromRoman = (str) => {
 };
 
 export const toRoman = (num) => {
-  if (num > 999999) return 'Input is too large';
+  if (num > 9999999) return 'Input is too large';
   if (num < 1) return 'Invalid Input';
   const lookup = {
     M: 1000,
