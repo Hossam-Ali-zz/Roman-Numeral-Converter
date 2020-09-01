@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Input from '../../components/Input';
-import { deromanize, romanize } from '../../Helpers/numberConverters';
+import { fromRoman, toRoman } from '../../Helpers/numberConverters';
 import './styles.scss';
 
 const Converter = () => {
@@ -23,7 +23,7 @@ const Converter = () => {
             placeholder="Roman Numerals ex: MCMXC"
             handleInputChange={handleInputChange}
           />
-          {romanNumber.length > 0 && <h1>{deromanize(romanNumber)}</h1>}
+          {romanNumber.length > 0 && <h1>{fromRoman(romanNumber)}</h1>}
         </div>
         <div className="input-result-container">
           <p>Enter English Numerals</p>
@@ -33,7 +33,7 @@ const Converter = () => {
             min={1}
             handleInputChange={handleInputChange}
           />
-          {digitNunber && <h1>{romanize(digitNunber)}</h1>}
+          {digitNunber && <h1>{toRoman(digitNunber)}</h1>}
         </div>
       </div>
     </div>

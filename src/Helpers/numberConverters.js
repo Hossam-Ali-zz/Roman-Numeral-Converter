@@ -1,4 +1,4 @@
-export const deromanize = (str) => {
+export const fromRoman = (str) => {
   let englishNumbers = str.toUpperCase(),
     num = 0,
     m;
@@ -29,7 +29,7 @@ export const deromanize = (str) => {
   return num;
 };
 
-export const romanize = (num) => {
+export const toRoman = (num) => {
   if (num > 999999) return 'Input is too large';
   if (num < 1) return 'Invalid Input';
   const lookup = {
