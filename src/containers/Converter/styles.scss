@@ -1,0 +1,26 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  & > h1 {
+    margin-bottom: 50px;
+  }
+}
+
+.converter-input-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.input-result-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & > h1 {
+    font-size: 18px;
+    word-break: break-all;
+  }
+}
